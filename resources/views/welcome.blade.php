@@ -56,6 +56,9 @@
                 <li class="">
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
+                <li class="">
+                    <a class="page-scroll" href="/tnc" target="_blank">T&C</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

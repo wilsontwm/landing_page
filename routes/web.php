@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::post('/register', ['as' => 'register', 'uses' => 'DriverController@register']);
+Route::get('/tnc', function() {
+    return view('tnc');
+});
