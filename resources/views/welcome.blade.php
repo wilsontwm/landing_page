@@ -77,6 +77,7 @@
                     <div class="form-header">
                         <h2>Register now!</h2>
                         <span>Fill up your basic information to get started!</span>
+                        <small><a href="" data-toggle="modal" data-target="#tnc_modal">T&C applies</a></small>
                     </div>
                     @include('flash::message')
                     <div class="form-group row {{ $errors->has('first_name') ? 'has-error' : '' }}">
@@ -216,7 +217,19 @@
         <div class="footer text-center">Copyright &copy; {{ date('Y') }} {{ config('app.name') }}.</strong> All rights reserved.</div>
     </div>
 </section>
-
+<div id="tnc_modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Terms & Conditions</h4>
+            </div>
+            <div class="modal-body">
+                @include('_tnc')
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <!-- jQuery -->
 <script src="vendor/jquery/jquery.min.js"></script>
 
